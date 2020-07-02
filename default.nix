@@ -4,7 +4,7 @@ let
   userSecrets = import ./userSecrets.nix;
 in
   pkgs.stdenv.mkDerivation({
-    name = "agondek-cv";
+    name = "plmisuw-cv";
     src = ./.;
 
     buildInputs = with pkgs; [ 
@@ -23,12 +23,12 @@ in
       # See: https://tex.stackexchange.com/questions/496275/texlive-2019-lualatex-doesnt-compile-document
       # Without export, lualatex fails silently, with exit code '0'
       export TEXMFVAR=$(pwd)
-      lualatex -interaction=nonstopmode agondek-cv.tex
+      lualatex -interaction=nonstopmode plmisuw-cv.tex
     '';
 
     installPhase = ''
-      mkdir -p $out
-      cp agondek-cv.log $out
-      cp agondek-cv.pdf $out
+      mkdir -pv ./out
+      cp plmisuw-cv.log ./out
+      cp plmisuw-cv.pdf ./out
     '';
   } // userSecrets)

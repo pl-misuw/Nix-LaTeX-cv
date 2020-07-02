@@ -192,15 +192,14 @@
 	\end{longtable}
 }
 
-\newcommand{\entry}[4]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
+\newcommand{\entry}[3]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
 	\parbox[t]{0.25\textwidth}{% FIX 17.5% of the text width of the page
 		#1 % Leftmost entry date(s) text
 	}%
 	&\parbox[t]{0.75\textwidth}{% FIX 82.5% of the text width of the page
 		\textbf{#2}% Entry heading text
 		\hfill% Horizontal whitespace
-		{\footnotesize \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
-		#4 % Entry description text
+		#3 % Entry description text
 	}\\\\}
 
 % Command to output a separator slash between lists, e.g. '  /  '

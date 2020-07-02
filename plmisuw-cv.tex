@@ -1,0 +1,239 @@
+\documentclass[9pt]{style/developercv}
+
+\edef \myLocation{\directlua{tex.sprint(os.getenv('LOCATION'))}}
+\edef \myCellPhone{\directlua{tex.sprint(os.getenv('CELL_NUMBER'))}}
+\edef \myEmailLink{\directlua{tex.sprint(os.getenv('EMAIL_LINK'))}}
+\edef \myEmail{\directlua{tex.sprint(os.getenv('EMAIL_DISPLAY'))}}
+\edef \myLinkedinLink{\directlua{tex.sprint(os.getenv('LINKEDIN_LINK'))}}
+\edef \myLinkedin{\directlua{tex.sprint(os.getenv('LINKEDIN_DISPLAY'))}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth}
+	\vspace{-\baselineskip}
+
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Michał}}}}}
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Suwara}}}}}
+	
+	\vspace{6pt}
+	
+	{\huge DevOps Engineer}
+\end{minipage}
+\begin{minipage}[t]{0.285\textwidth}
+	\vspace{-\baselineskip}
+	
+	\icon{MapMarker}{10}{\myLocation}\\
+	\icon{Phone}{10}{\myCellPhone} \\
+	\icon{At}{10}{\href{\myEmailLink}{\myEmail}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.285\textwidth}
+	\vspace{-\baselineskip}
+	
+	\icon{Github}{10}{\href{https://github.com/pl-misuw}{MichalSuwara}}\\
+	\icon{Linkedin}{10}{\href{\myLinkedinLink}{\myLinkedin}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{1\textwidth} % 80% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	I am an engineer with 5 years’ experience working in technology.\\
+	
+	Due to my work with consultancy agencies I have a strong understanding of processes, engineering principals and communication with clients and stakeholders.\\
+
+	I have primarily worked on the Windows-related web stack, but have worked across a broad range of technologies thereon: Groovy, Linux, Docker and most recently Openshift and Kubernetes; as well as spending a reasonable amount of time building applications for the web, which has given me an exposure to a range of web-related skills (Graphic design, coding, services, workflows, AWS integrations). \\
+
+\end{minipage}
+
+\vspace{1cm}
+
+%----------------------------------------------------------------------------------------
+%	TOP QUALITIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip}
+
+	\cvsect{People person}
+
+	I enjoy working with interesting people, with understanding of business-related topics, management and emphasis 
+	on DevOps culture.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip}
+	
+	\cvsect{Ownership}
+	
+	When given a task, project or issue to solve, I always take full responsibility for the outcome - doing my upmost
+	best to deliver solution, whilst fostering cooperative approach in development process.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip}
+	
+	\cvsect{Creativity}
+	
+	Throughout my career, I have been working of multitude of different creative tasks, from graphic design to DevOps-related duties.
+	Always seeking the creative solutions to presented problems. 
+\end{minipage}
+
+\vspace{0.75cm}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+	    {2018 -- Present\\\footnotesize{DevOps Engineer}}
+		{Nordea}
+		{
+			\texttt{Nix}\slashsep
+			\texttt{Kubernetes/Openshift}\slashsep
+			\texttt{Unix systems}\slashsep
+			\texttt{Jenkins}\\
+
+			Work with Openshift platform, contenerization and applications deployments and maintanance. \\
+			Work with clients and stakeholders in regards to migration and transition processes. This includes support in automation, contenerization and run of apps. \\
+			Work with Nix environment, both Nix package manager and NixOS \\
+			Continuous Deplotment pipelines based on Jenkins
+		}
+	\entry
+		{2017 -- Mar\\\footnotesize{DevOps Engineer}}
+		{Accenture}
+		{
+			\texttt{Jenkins}\slashsep
+			\texttt{Windows Stack}\slashsep
+			\texttt{Docker}\slashsep
+			\texttt{AWS}\slashsep
+			\texttt{Monitoring}\\
+ 
+ 			Deployment automation using Jenkins, Virtual Machines (Hyper-V) Powershell, Windows Server Core, Docker, NugetFeed and MSBuild Tools.\\ 
+ 			AWS configuration, administration and automation (EC2, S3, RDS)\\
+ 			Deploying and configuring the web app (CMS) used for the project.\\
+			Troubleshooting problems related to Application performance stability and deployments.\\
+			Troubleshooting VM's and VM administration.\\
+			Troubleshooting Hardware issues (with on-site ardware)
+		}
+	\entry
+		{2016 -- 2017\\\footnotesize{DevOps Engineer}}
+		{ZeroChaos/ABB}
+		{
+			\texttt{Jenkins}\slashsep
+			\texttt{Windows Stack}\slashsep
+			\texttt{Docker}\slashsep
+			\texttt{AWS}\slashsep
+			\texttt{Monitoring}\\
+
+			Work with TeamCity, Jenkins, Team Foundation Server, MSBuild, Windows server.\\
+			Coding, automating deployment procedures. VCS software and Version Control management.\\
+			Collaboration with Developers, QA and Business (stakeholders, product owners).\\
+			Amazon Web Services – RDS, Console, EC2 route 53, s3 management.\\
+			Monitoring and maintaining Application stability.
+		}
+	\entry
+		{2014 -- 2016\\\footnotesize{Application Specialist}}
+		{ZeroChaos}
+		{
+			\texttt{Bug/feature testing}\slashsep
+			\texttt{Troubleshooting}\slashsep
+			\texttt{Documentation}\slashsep
+			\texttt{Front and Back-end related support duties}\slashsep
+			\texttt{Monitoring}\\
+
+			
+			Diagnosingand resolving hardware and software problems. \\
+			Communicating with third party technical specialists. \\
+			Working with Development and Operations teams. \\
+			Troubleshooting, feature testing, feature integration. \\
+			Technical documentation, process descriptions. \\
+			Maintaining application continuous availability. \\
+			Bug tracking.
+		}
+	\entry
+		{2013 -- 2014\\\footnotesize{IT SUPPORT}}
+		{Eurocent S.A.}
+		{
+			\texttt{SQL databases}\slashsep
+			\texttt{Support with office tools}\slashsep
+			\texttt{Microsoft Domain administration}\slashsep
+			\texttt{.NET MVC}\\
+
+			Diagnosing and resolving hardware, software and end user problems. \\
+			Acting as the first point of contact for all IT and technical queries. \\
+			Working within TCP/IP network environment, including DHCP, DNS and Ethernet. \\
+			Involved in the rollout of software and hardware updates. \\
+			Communicating with third party technical specialists. \\
+			Provide secondary support for LAN administration. \\
+		}
+	\entry
+		{Sep 2011 -- Mar 2014\\\footnotesize{Graphic designer}}
+		{IT4BUSINESS}
+		{
+			\texttt{Multitude of Design and motion graphics softrware}\slashsep
+			\texttt{CSS}\slashsep
+			\texttt{Bootstrap}\slashsep
+			\texttt{JavaScript}\slashsep
+			\texttt{Node.js}\\
+
+			Worked as a website designer and backend developer - have written 
+			couple of static websites (adhering to responsive design)\\
+			The skills acquired mostly relate to designing a functional website, as 
+			well as technicalities of web protocols.
+		}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip}
+
+	\cvsect{Languages}
+
+	\textbf{English} - proficient\\
+	\textbf{Polish} - native
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip}
+	
+	\cvsect{Hobbies}
+	
+	Role-playing games\\
+	Visual arts\\
+	History and historical reenactment\\
+	Memes
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\vspace{1.00cm}
+
+\begin{minipage}[t]{1\textwidth}
+	I hereby agree to the processing of personal data provided in this document for 
+	realising the recruitment process pursuant to the Personal Data Protection Act
+	of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 
+	2016/679 of the European Parliament and of the Council of 27 April 2016 on the 
+	protection of natural persons with regard to the processing of personal data and on 
+	the free movement of such data, and repealing Directive 95/46/EC (General Data 
+	Protection Regulation).
+\end{minipage}
+
+\end{document}
